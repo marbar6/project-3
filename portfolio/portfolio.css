@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fff;
+}
+.container p{
+  line-height: .5;
+}
+.work{
+  font-size: 50px;
+  font-weight: bolder;
+  color: red;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  padding: 15px 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 35px;
+  display: block;
+  height: 200px;
+}
+footer div{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+footer div img{
+  height: 60px;
+  width: auto;
+  visibility: hidden;
+}

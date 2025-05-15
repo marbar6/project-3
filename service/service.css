@@ -1,0 +1,22 @@
+main{
+    padding: 20px 70px 0px 70px;
+}
+main .all-services-intro{
+    line-height: .7;
+}
+main .all-services-intro .innovations{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 38, 38);
+    line-height: 1;
+}
+main .all-services-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+.dot-img-footer-service{
+    opacity: .1;
+    height: 50px;
+}

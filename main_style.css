@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.logoName {
+    font-weight: bolder;
+}
+
+.container-fluid {
+    padding: 7px;
+}
+
+.nav-underline {
+    text-decoration-color: rgb(255, 38, 38);
+}
+
+.nav-item {
+    padding-left: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.sort-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 900px;
+}
+
+.dot-img-right {
+    height: 170px;
+    position: absolute;
+    left: -80px;
+    opacity: .3;
+}
+
+.sort-details-myself {
+    padding: 0px 0px 0px 120px;
+}
+
+.jod-title {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.name {
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(255, 38, 38);
+}
+
+.motivation {
+    line-height: 25px;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.btn-div .portfolio,
+.contact-me {
+    width: 125px;
+    padding: 2px 0px 2px 0px;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 17px;
+    color: white;
+    outline: none;
+    border: transparent;
+}
+
+.portfolio {
+    background-color: rgb(50, 50, 50);
+}
+
+.contact-me {
+    background-color: rgb(255, 38, 38);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px 20px 0px 20px;
+    box-shadow: 0 0 0 10px white;
+    /* inner white padding */
+}
+
+.image-wrapper::before,
+.image-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background-color: #ffd54c;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.image-wrapper::before {
+    top: 15px;
+    left: 1px;
+
+}
+
+.image-wrapper::after {
+    bottom: -1px;
+    right: 0px;
+}
+
+.image-content {
+    position: relative;
+    z-index: 2;
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer .main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    gap: 250px;
+    margin-top: 25px;
+}
+
+.main-footer .all-link {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.main-footer .dot-img-footer {
+    height: 100px;
+    opacity: .4;
+}
+
