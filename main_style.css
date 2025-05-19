@@ -179,6 +179,8 @@
         align-items: center;
         flex-direction: column;
         width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .sort-details {
