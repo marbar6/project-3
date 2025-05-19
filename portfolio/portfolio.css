@@ -54,7 +54,7 @@ footer div {
   }
 
   main {
-    padding: 0px 17px 0px 17px;
+    padding: 0px 30px 0px 30px;
   }
 
   .container {
@@ -73,12 +73,15 @@ footer div {
   }
 
   .grid-container {
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .card {
     margin-top: 20px;
-    width: 100%;
+    width: 350px;
   }
 
   footer div {
