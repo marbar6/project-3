@@ -1,22 +1,77 @@
-main{
+main {
     padding: 20px 70px 0px 70px;
 }
-main .all-services-intro{
+
+main .all-services-intro {
     line-height: .7;
 }
-main .all-services-intro .innovations{
+
+main .all-services-intro .innovations {
     font-size: 40px;
     font-weight: bolder;
     color: rgb(255, 38, 38);
     line-height: 1;
 }
-main .all-services-box{
+
+main .all-services-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 30px;
 }
-.dot-img-footer-service{
+
+main .all-services-box .card {
+    background-color: rgb(132, 132, 132);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+
+main .all-services-box .card-img-top {
+    border-radius: 20px;
+}
+
+.dot-img-footer-service {
     opacity: .1;
     height: 50px;
+    position: fixed;
+    right: 0;
+}
+
+@media(max-width:900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .all-services-intro {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .expertise {
+        font-size: 19px;
+    }
+
+    main .all-services-intro .innovations {
+        font-size: 30px;
+    }
+
+    main .all-services-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main .all-services-box .card {
+        background-color: rgb(132, 132, 132);
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+    main .all-services-box .card-img-top {
+        border-radius: 20px;
+    }
 }

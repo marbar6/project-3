@@ -51,7 +51,44 @@ main .container {
     line-height: 30px;
 }
 
-.red-color-box p,a{
+.box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box p,
+a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width:900px) {
+    main .container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .para {
+        width: 100%;
+    }
+
+    .red-color-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        bottom: -100%;
+        padding-top: 30px;
+    }
+    .box{
+        margin-top: 20px;
+    }
 }

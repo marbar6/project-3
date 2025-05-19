@@ -1,16 +1,22 @@
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
   background-color: #fff;
 }
-.container p{
+
+body {
+  text-align: center;
+}
+
+.container p {
   line-height: .5;
 }
-.work{
+
+.work {
   font-size: 50px;
   font-weight: bolder;
   color: red;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -33,13 +39,52 @@ body {
   display: block;
   height: 200px;
 }
-footer div{
+
+footer div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 140px;
   margin-top: 50px;
 }
-footer div img{
-  height: 60px;
-  width: auto;
-  visibility: hidden;
+
+@media (max-width:900px) {
+  .nav-item {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  main {
+    padding: 0px 17px 0px 17px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .container p {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .work {
+    font-size: 35px;
+  }
+
+  .grid-container {
+    display: inline;
+  }
+
+  .card {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0px;
+  }
 }

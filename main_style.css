@@ -36,9 +36,9 @@
 
 .dot-img-right {
     height: 170px;
-    position: absolute;
+    position: fixed;
     left: -80px;
-    opacity: .3;
+    opacity: 0.3;
 }
 
 .sort-details-myself {
@@ -67,7 +67,7 @@
     gap: 150px;
 }
 
-.btn-div .portfolio,
+.portfolio,
 .contact-me {
     width: 125px;
     padding: 2px 0px 2px 0px;
@@ -100,7 +100,7 @@
 
 .image-wrapper::before,
 .image-wrapper::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 230px;
     height: 230px;
@@ -112,7 +112,6 @@
 .image-wrapper::before {
     top: 15px;
     left: 1px;
-
 }
 
 .image-wrapper::after {
@@ -136,7 +135,7 @@
     flex-direction: row;
     position: relative;
     gap: 250px;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .all-link {
@@ -145,9 +144,12 @@
     gap: 100px;
 }
 
-.main-footer .dot-img-footer {
-    height: 100px;
-    opacity: .4;
+.dot-img-footer {
+    right: 200px;
+    bottom: -1px;
+    height: 120px;
+    opacity: 0.2;
+    position: fixed;
 }
 
 .navbar-toggler {
@@ -164,20 +166,76 @@
 }
 
 @media (max-width: 990px) {
-    .main-container {
+    main{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .sort-details-myself{
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .sort-details {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
+        margin-left: -120px;
+        width: auto;
     }
-    .btn-div, .main-footer, .all-link{
+
+    .jod-title {
+        font-size: 22px;
+    }
+
+    .name {
+        font-size: 45px;
+    }
+
+    .sort-details-myself {
         display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
     }
-    
+
+    .btn-div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px;
+    }
+
+    .portfolio,
+    .contact-me {
+        width: 100%;
+        height: 40px;
+    }
+
+    .my-photo-div {
+        margin-top: -60px;
+    }
+
+    .main-footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .all-link {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .motivation {
+        width: 350px;
+    }
 }
