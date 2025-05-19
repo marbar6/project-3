@@ -88,16 +88,16 @@
     }
     .details-about{
         margin-top: 30px;
-        width: 400px;
+        width: 380px;
     }
     .details-about-intro{
-        font-size: 15px;
+        font-size: 17px;
     }
     .details-about-name{
         font-size: 25px;
     }
     .details-about-education{
-        font-size: 15px;
+        font-size: 17px;
     }
     .details-about-btn{
         display: flex;
