@@ -3,13 +3,13 @@ const path = require("path");
 let PORT = 9000;
 let router=express();
 
-
-router.use(express.static(path.join(__dirname,"portfolio")))
+// css style
+router.use(express.static(path.join(__dirname)))
 
 
 // now this is the all routes
 router.get("/",(req,res)=>{
-    res.sendFile(path.join("D:/project/portfolio","index.html"));
+    res.sendFile(path.join(__dirname,"index.html"));
 })
 
 router.listen(PORT,()=>{
